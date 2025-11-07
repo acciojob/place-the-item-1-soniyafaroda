@@ -1,2 +1,28 @@
 
 /* Your CSS Code here. */
+body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Holder = Flex Container */
+        .holder {
+            display: flex;
+            justify-content: space-between; /* spaces between items */
+            align-items: center; /* vertically centers items */
+            flex-wrap: wrap; /* allows wrapping to next line */
+            background-color: #f2f2f2;
+            padding: 20px;
+            gap: 10px; /* small spacing between rows if wrapped */
+        }
+
+        /* Item = Flex Items */
+        .item {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            padding: 20px 40px;
+            border-radius: 8px;
+            text-align: center;
+            flex: 0 0 auto; /* prevents squashing */
+        }
